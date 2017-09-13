@@ -1,19 +1,18 @@
 # HelloWorldSolidity
 Hello World Smart Contract in Solidity
 
-
-Broadcasting Simple Transaction to local TestRPC blockchain
-How to setup the development environment, connect the testRPC local blockchain to node console. Once set up, code a basic Ethereum transaction from scratch using "web3" and broadcast it to testRPC.
-*Inside console1:
-//Create dependencies in package.json using Sublime text editor
-$ sublime package.son
-*Inside package.json type in:
-{
+<div>Broadcasting Simple Transaction to local TestRPC blockchain<br>
+How to setup the development environment, connect the testRPC local blockchain to node console. Once set up, code a basic Ethereum transaction from scratch using "web3" and broadcast it to testRPC.</div><br>
+<div>*Inside console1:</div><br>
+<div>//Create dependencies in package.json using Sublime text editor</div><br>
+<div>$ sublime package.son</div><br>
+<div>*Inside package.json type in:</div><br>
+<code>{
     "dependencies" : {
         "web3": "0.19.0",
         "solc": "0.4.11"
     }
-}
+}</code><br>
 //where web3 => https://github.com/ethereum/web3.js/ and solc => https://solidity.readthedocs.io/en/latest/using-the-compiler.html
 *Inside console1
 //install the packages
