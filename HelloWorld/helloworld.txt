@@ -1,1 +1,2 @@
+// Shows a simple smart contract built in a text editor and deployed to testRPC local blockchain from the node console.
 
