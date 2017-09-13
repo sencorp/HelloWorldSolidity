@@ -24,3 +24,16 @@ $ node
 //make sure you have access to testrpc accounts, gives a list of 10 accounts, start index at 0
 > web3.eth.accounts
 > var acct1 = web3.eth.accounts[0]
+> var acct2 = web3.eth.accounts[1]
+// get account balance for acct1 in wei
+> web3.eth.getBalance(acct1)
+// express account balance in ether
+> web3.fromWei(web3.eth.getBalance(acct1), 'ether')
+// shows only the number of ether
+> web3.fromWei(web3.eth.getBalance(acct1), 'ether').toNumber()
+// send 1 ether from acct1 to acct2
+> web3.eth.sendTransaction({from: acct1, to: acct2, value: web3.toWei(1, 'ether')})
+// Check the balances again
+> web3.fromWei(web3.eth.getBalance(acct2), 'ether').toNumber()
+// the amount of ether balance in acct1 is reduced by the number of sent ether plus the gas cost
+> web3.fromWei(web3.eth.getBalance(acct1), 'ether').toNumber()
